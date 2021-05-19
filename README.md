@@ -10,6 +10,8 @@ Submissions are evaluated on the root mean square percentage error (RMSPE).
 
 ![image](https://user-images.githubusercontent.com/76450761/118817147-31420880-b8b3-11eb-9050-71c27473c5a2.png)
 
+Please install the requirements.txt to reproduce the results:
+pip install -r requirements.txt
 
 The dataset consists of three csv files: store.csv, train.csv and holdout.csv
 
