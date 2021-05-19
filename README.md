@@ -11,15 +11,18 @@ Submissions are evaluated on the root mean square percentage error (RMSPE).
 ![image](https://user-images.githubusercontent.com/76450761/118817147-31420880-b8b3-11eb-9050-71c27473c5a2.png)
 
 
-The dataset consists of two csv files: store.csv and train.csv.
+The dataset consists of three csv files: store.csv, train.csv and holdout.csv
+
 Data Files:
 - train.csv holds info about each store.
 - store.csv holds the sales info per day for each store.
 - holdout. csv holds "unseen" data that the model is going to be evaluated on
 
 
-The repo contains main.py that runs the main script from step one until the end. 
-The script can be run after cloning since all data used is in the repo.
+#### The repo contains main.py that runs the main script from step one until the end. 
+#### The script can be run after cloning since all data used is in the repo.
+
+Notes on main.py:
 
 By default, the hyperparameter section is uncommented due to long completion time. 
 The other sections will print out intermediate results for demonstration purposes on how the score looks like applying different models.
