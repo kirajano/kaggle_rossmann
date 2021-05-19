@@ -153,6 +153,7 @@ funct.pipeline_models(x_train, x_test, y_train, y_test, features, *models)
 #model = XGBRegressor()
 #params = {"max_depth": [10, 15, 20], "n_estimators": [400, 500, 600],  "eta": [0.1], "subsample": [0.7], "colsample_bytree": [0.8]}
 #final_model = funct.model_tuning(model, params, x, y, features, n_splits=3)
+#final_model.fit(dataset[features])
 # Exporting Final Model
 #print("**** Exporting Model to Pickle ****")
 #save_model = "rossman_model.sav"
