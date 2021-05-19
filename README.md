@@ -12,6 +12,7 @@ Submissions are evaluated on the root mean square percentage error (RMSPE).
 
 Please install the requirements.txt to reproduce the results:
 pip install -r requirements.txt
+It is recommended to use a new environment before running the pip install.
 
 The dataset consists of three csv files: store.csv, train.csv and holdout.csv
 
