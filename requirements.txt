@@ -1,0 +1,7 @@
+pandas==0.25.3
+numpy==1.20.1
+sklear==0.24.1
+matplotlib==3.3.4
+category_encoder==2.2.2
+xgboost==0.90
+plotly==4.14.3
