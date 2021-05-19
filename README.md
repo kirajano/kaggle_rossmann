@@ -17,10 +17,10 @@ Data Files:
 - store.csv holds the sales info per day for each store.
 - holdout. csv holds "unseen" data that the model is going to be evaluated on
 
-Script Files:
 
 The repo contains main.py that runs the main script from step one until the end. 
-The script can be run after cloning since all data used is in the repo. 
+The script can be run after cloning since all data used is in the repo.
+
 By default, the hyperparameter section is uncommented due to long completion time. 
 The other sections will print out intermediate results for demonstration purposes on how the score looks like applying different models.
 The script can be ran individually and the last print out will be the RMSPE for the predictions of the holdout set. 
