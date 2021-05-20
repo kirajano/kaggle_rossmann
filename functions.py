@@ -40,7 +40,8 @@ def custom_cv(dataset, features, train_cut=0.6, val_cut=0.8):
 	Output:
 		Prints the RMSPE for train vs validate and train+validate vs test
 	"""
-	train, validate, test = np.split(dataset, [int(train_cut * len(dataset)) -1, int(val_cut * len(dataset))] )
+	train, validate, test = np.split(dataset, 
+							[int(train_cut * len(dataset)) -1, int(val_cut * len(dataset))] )
 	rfr_cv = RandomForestRegressor(max_depth=20, n_estimators=50)
 
 	cv_x_train = train.loc[:, (train.columns != "Sales")]
@@ -77,8 +78,6 @@ def model_tuning(model, params, x, y, features, n_splits=5):
 	cv = KFold(n_splits=n_splits, random_state=None, shuffle=False)
 	gscv = GridSearchCV(model, params, scoring="r2", n_jobs=-1, cv=cv)
 	gscv.fit(x[features], y)
-	print(f'Best Score: {gscv.best_score_}')
-	print(f'Best Hyperparameters: {gscv.best_params_}')
 	return gscv
 
 
